@@ -29,7 +29,8 @@ public class FrightMachineTest {
     public void whenMotionIsDetectedExpectedPluginsKickOff() throws Exception {
         Horn horn = new Horn();
         Strobe strobe = new Strobe();
-        Camera camera = new Camera(5);
+        Camera camera = new Camera();
+        camera.setNumberOfPhotos(5);
 
         machine.addAccessory(horn);
         machine.addAccessory(strobe);

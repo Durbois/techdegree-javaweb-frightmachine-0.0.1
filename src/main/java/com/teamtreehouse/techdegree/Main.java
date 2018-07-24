@@ -11,7 +11,9 @@ public class Main {
         FrightMachine machine = new FrightMachine();
         Horn horn = new Horn();
         Strobe strobe = new Strobe();
-        Camera camera = new Camera(5);
+        Camera camera = new Camera();
+
+        camera.setNumberOfPhotos(5);
 
         machine.addAccessory(horn);
         machine.addAccessory(strobe);
